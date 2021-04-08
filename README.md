@@ -143,3 +143,15 @@ still be compilable with cmake and make./
 ## How to write a README
 A well written README file can enhance your project and portfolio.  Develop your abilities to create professional README files by completing [this free course](https://www.udacity.com/course/writing-readmes--ud777).
 
+## Implementation
+* Overview
+  * Perception : The sensor_fusion matrix is used to detect the surrunding objects. (sensor data)
+
+  * Localization : The highway_map.csv contains both XY coordinate and s,d Fernet coordinate.
+
+  * Predictions : The surrunding vehicle trajectory is predicted based on the information provided by the sensor_fusion matrix.
+
+  * Behaviour planner : A list of decision is generated for the vehicle to follow based on a FSM.
+
+  * Trajectory Generation : the trajectories are generated for all potential behavior decisions, and a finalized trajectory is selected based on a cost function.
+
